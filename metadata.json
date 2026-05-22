@@ -1,0 +1,6 @@
+{
+  "name": "Devarda.ink - Premium Tattoo Shop Bali",
+  "description": "Premium custom tattoo studio landing page for Devarda.ink in Kerobokan, Bali. Featuring dark luxury visuals, artist portfolios, an interactive style quiz, and bespoke booking experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
