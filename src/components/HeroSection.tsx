@@ -48,13 +48,13 @@ export default function HeroSection({
       {/* Top Header Navigation Inside Hero */}
       <header className="relative z-10 w-full px-6 py-6 md:px-12 flex justify-between items-center bg-black/15 backdrop-blur-md border-b border-white/[0.04]">
         <div className="flex flex-col text-left">
-          <span className="font-sans font-extrabold text-2xl tracking-[0.25em] text-white uppercase">
-            DEVARDA<span className="text-gold-500 font-light">.ink</span>
-          </span>
-          <span className="font-mono text-[8px] uppercase tracking-[0.45em] text-neutral-400 mt-0.5">
-            TATTOO STUDIO
-          </span>
-        </div>
+  {/* 🌟 FIXED: Replaced text headers with a graphic logo from src/assets/images */}
+  <img 
+    src="./logo_baru.png" 
+    alt="Devarda Ink Logo" 
+    className="h-10 md:h-12 w-auto object-contain" 
+  />
+</div>
 
         {/* Desktop Anchor Navigation */}
         <nav className="hidden lg:flex items-center space-x-8 text-[10px] font-mono tracking-widest text-neutral-300 uppercase">
