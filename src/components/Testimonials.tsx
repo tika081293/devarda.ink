@@ -3,18 +3,20 @@ import { motion, AnimatePresence } from "motion/react";
 import { Star, ChevronLeft, ChevronRight, Quote, Globe } from "lucide-react";
 import { TESTIMONIALS } from "../data";
 
+const REVIEWS = TESTIMONIALS.slice(0, 6);
+
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % TESTIMONIALS.length);
+    setCurrentIndex((prev) => (prev + 1) % REVIEWS.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
+    setCurrentIndex((prev) => (prev - 1 + REVIEWS.length) % REVIEWS.length);
   };
 
-  const activeReview = TESTIMONIALS[currentIndex];
+  const activeReview = REVIEWS[currentIndex];
 
   return (
     <section id="testimonials" className="bg-neutral-950 py-24 px-6 md:px-12 lg:px-24 border-b border-white/[0.03] relative overflow-hidden">
@@ -97,7 +99,7 @@ export default function Testimonials() {
             </button>
 
             <span className="text-[10px] font-mono text-neutral-500 select-none">
-              {currentIndex + 1} / {TESTIMONIALS.length}
+              {currentIndex + 1} / {REVIEWS.length}
             </span>
 
             <button
