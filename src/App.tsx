@@ -126,11 +126,9 @@ export default function App() {
             : "bg-transparent -translate-y-full"
         }`}
       >
-        <a href="#hero-section" className="flex flex-col text-left">
-          <span className="font-sans font-bold text-lg tracking-[0.2em] text-white">
-            DEVARDA<span className="text-gold-500 font-light">.ink</span>
-          </span>
-        </a>
+     <a href="#hero-section" className="flex items-center">
+  <img src="./src/assets/images/logo_baru.png" alt="Devarda Ink Logo" className="h-8 w-auto object-contain" />
+</a>
 
         {/* Desktop Anchor links */}
         <div className="hidden lg:flex items-center gap-8 text-[10px] font-mono tracking-widest text-neutral-400">
