@@ -4,19 +4,19 @@ import { Compass, Waves, Sun, Anchor } from "lucide-react";
 export default function BaliExperience() {
   const experiences = [
     {
-      icon: <Waves className="w-5 h-5 text-red-500" />,
+      icon: <Waves className="w-5 h-5 text-gold-500" />,
       label: "ELEMENTAL DRIFT",
       title: "Surfer Contours",
       desc: "Bali is sculpted by fierce tides. We map our geometric lines to wrap seamlessly with physical contours, capturing the fluid energy of southern ocean swells on your skin as a permanent emblem of freedom."
     },
     {
-      icon: <Compass className="w-5 h-5 text-amber-500" />,
+      icon: <Compass className="w-5 h-5 text-gold-500" />,
       label: "NOMAD PILGRIMAGE",
       title: "Wanderer Memory",
       desc: "For digital creators, travelers, and free spirits, a tattoo here is not just decoration. It serves as a modern talisman — a spiritual coordinates marker carrying the mystical wind of your Indonesian residency."
     },
     {
-      icon: <Sun className="w-5 h-5 text-red-500" />,
+      icon: <Sun className="w-5 h-5 text-gold-500" />,
       label: "TROPICAL RITE",
       title: "Sacred Volcanic Ash",
       desc: "Under the shadow of Mt. Agung, we blend contemporary Parisian style-lines with deep traditional respects. It is a slow, therapeutic rite of passage, shaded inside a sterile black luxury oasis."
@@ -27,7 +27,7 @@ export default function BaliExperience() {
     <section className="relative bg-black py-28 px-6 md:px-12 lg:px-24 overflow-hidden border-b border-white/[0.03]">
       
       {/* Background radial gradient */}
-      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-96 h-96 bg-red-950/20 rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-96 h-96 bg-gold-950/20 rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-10 w-[450px] h-[450px] bg-stone-900/10 rounded-full blur-[160px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto relative z-10 space-y-20">
@@ -35,7 +35,7 @@ export default function BaliExperience() {
         {/* Editorial Title Block */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
           <div className="space-y-4">
-            <span className="font-mono text-[10px] tracking-[0.55em] text-red-500 uppercase block">
+            <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase block">
               BALI LIFESTYLE & RITES
             </span>
             <h2 className="text-4xl md:text-6xl font-serif font-light text-white tracking-tight leading-none uppercase">
@@ -65,15 +65,15 @@ export default function BaliExperience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.15 }}
-              className="group relative p-8 rounded-2xl bg-gradient-to-b from-stone-950 to-neutral-950 border border-white/5 overflow-hidden transition-all duration-500 hover:border-red-500/20"
+              className="group relative p-8 rounded-2xl bg-gradient-to-b from-stone-950 to-neutral-950 border border-white/5 overflow-hidden transition-all duration-500 hover:border-gold-500/20"
             >
               {/* Top luxury line accent */}
-              <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/40 transition-all duration-700"></div>
+              <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-gold-500/0 to-transparent group-hover:via-gold-500/40 transition-all duration-700"></div>
 
               <div className="space-y-6">
                 
                 {/* Icon Circle */}
-                <div className="w-11 h-11 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:border-red-500/30 group-hover:scale-105">
+                <div className="w-11 h-11 rounded-xl bg-neutral-900 border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:border-gold-500/30 group-hover:scale-105">
                   {exp.icon}
                 </div>
 
@@ -103,7 +103,7 @@ export default function BaliExperience() {
         {/* Fullwidth quote frame */}
         <div className="p-8 md:p-12 rounded-3xl bg-neutral-950/60 border border-white/5 flex flex-col md:flex-row items-center justify-between gap-8 backdrop-blur-md">
           <div className="space-y-2 max-w-xl text-left">
-            <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase block">
+            <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase block">
               ADVISORY NOTE FOR ADVENTURERS
             </span>
             <h4 className="text-lg font-sans font-semibold text-white uppercase tracking-tight">
@@ -116,7 +116,7 @@ export default function BaliExperience() {
           
           <a
             href="#styles"
-            className="px-6 py-3.5 whitespace-nowrap bg-neutral-900 border border-white/10 hover:border-red-500/20 text-white font-mono text-[10px] tracking-widest rounded-lg cursor-pointer transition-all duration-300 hover:text-red-400 uppercase"
+            className="px-6 py-3.5 whitespace-nowrap bg-neutral-900 border border-white/10 hover:border-gold-500/20 text-white font-mono text-[10px] tracking-widest rounded-lg cursor-pointer transition-all duration-300 hover:text-gold-400 uppercase"
           >
             DISCOVER STYLE VIBES
           </a>

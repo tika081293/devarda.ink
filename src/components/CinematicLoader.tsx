@@ -64,14 +64,14 @@ export default function CinematicLoader({ onComplete }: CinematicLoaderProps) {
           <div className="flex justify-between items-center">
             <div className="flex flex-col text-left">
               <span className="font-sans font-bold text-base tracking-[0.3em] text-white">
-                DEVARDA<span className="text-amber-500 font-light">.ink</span>
+                DEVARDA<span className="text-gold-500 font-light">.ink</span>
               </span>
               <span className="font-mono text-[8px] tracking-widest text-neutral-500 uppercase">
                 KEROBOKAN, BALI
               </span>
             </div>
 
-            <span className="font-mono text-[9px] text-amber-500/80 tracking-widest border border-amber-500/20 px-2.5 py-1 rounded bg-amber-500/[0.02]">
+            <span className="font-mono text-[9px] text-gold-500/80 tracking-widest border border-gold-500/20 px-2.5 py-1 rounded bg-gold-500/[0.02]">
               CLINICAL SANCTUARY CODE • VIP
             </span>
           </div>
@@ -86,12 +86,12 @@ export default function CinematicLoader({ onComplete }: CinematicLoaderProps) {
             >
               <h2 className="font-serif text-4xl md:text-7xl font-light text-white tracking-[0.1em] uppercase leading-none">
                 Symmetry <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600 font-bold tracking-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-200 via-gold-400 to-gold-600 font-bold tracking-tight">
                   Meets Soul
                 </span>
               </h2>
               <div className="flex items-center justify-center gap-1">
-                <span className="font-hand text-2xl text-amber-500/90 mt-2 block lowercase">
+                <span className="font-hand text-2xl text-gold-500/90 mt-2 block lowercase">
                   indigenous whispers, luxury lines
                 </span>
               </div>
@@ -102,7 +102,7 @@ export default function CinematicLoader({ onComplete }: CinematicLoaderProps) {
           <div className="space-y-6 max-w-lg w-full mx-auto md:mx-0">
             <div className="space-y-2 text-left">
               <div className="flex justify-between items-end font-mono">
-                <span className="text-[10px] tracking-wider text-amber-500 font-medium h-4 inline-block duration-200">
+                <span className="text-[10px] tracking-wider text-gold-500 font-medium h-4 inline-block duration-200">
                   {logText}
                 </span>
                 <span className="text-sm text-neutral-400 font-regular">{progress}%</span>
@@ -111,7 +111,7 @@ export default function CinematicLoader({ onComplete }: CinematicLoaderProps) {
               {/* Progress bar */}
               <div className="w-full h-[2px] bg-neutral-900 rounded-full overflow-hidden">
                 <motion.div
-                  className="h-full bg-gradient-to-r from-amber-600 to-amber-400"
+                  className="h-full bg-gradient-to-r from-gold-600 to-gold-400"
                   style={{ width: `${progress}%` }}
                 />
               </div>

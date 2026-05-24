@@ -81,17 +81,17 @@ export default function AudioToggle() {
   return (
     <button
       onClick={handleToggle}
-      className="flex items-center gap-2 p-2 px-3 rounded-full bg-stone-900/90 hover:bg-stone-850 border border-white/10 text-[10px] font-mono tracking-widest text-neutral-400 hover:text-amber-400 transition-all cursor-pointer shadow-lg active:scale-95 z-40"
+      className="flex items-center gap-2 p-2 px-3 rounded-full bg-stone-900/90 hover:bg-stone-850 border border-white/10 text-[10px] font-mono tracking-widest text-neutral-400 hover:text-gold-400 transition-all cursor-pointer shadow-lg active:scale-95 z-40"
     >
       {isPlaying ? (
         <>
           <span className="flex items-end gap-[2.5px] h-3 pr-1">
-            <span className="w-[2.5px] h-1.5 bg-amber-500 rounded-full animate-[bounce_0.8s_infinite_ease-in-out_200ms]"></span>
-            <span className="w-[2.5px] h-3 bg-amber-500 rounded-full animate-[bounce_1.2s_infinite_ease-in-out_100ms]"></span>
-            <span className="w-[2.5px] h-2 bg-amber-400 rounded-full animate-[bounce_1s_infinite_ease-in-out_350ms]"></span>
+            <span className="w-[2.5px] h-1.5 bg-gold-500 rounded-full animate-[bounce_0.8s_infinite_ease-in-out_200ms]"></span>
+            <span className="w-[2.5px] h-3 bg-gold-500 rounded-full animate-[bounce_1.2s_infinite_ease-in-out_100ms]"></span>
+            <span className="w-[2.5px] h-2 bg-gold-400 rounded-full animate-[bounce_1s_infinite_ease-in-out_350ms]"></span>
           </span>
           <span className="text-[9px]">SANCTUARY SOUNDS: ACTIVE</span>
-          <Volume2 className="w-3.5 h-3.5 text-amber-500 ml-0.5" />
+          <Volume2 className="w-3.5 h-3.5 text-gold-500 ml-0.5" />
         </>
       ) : (
         <>

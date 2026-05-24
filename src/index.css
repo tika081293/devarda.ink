@@ -6,6 +6,17 @@
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
   --font-serif: 'Cinzel', Georgia, serif;
   --font-hand: 'Herr Von Muellerhoff', cursive;
+
+  --color-gold-50: #fbf7ee;
+  --color-gold-100: #f4eaaf;
+  --color-gold-200: #edd871;
+  --color-gold-300: #e3be3e;
+  --color-gold-400: #dfb234;
+  --color-gold-500: #cf9b2a;
+  --color-gold-600: #b0811e;
+  --color-gold-700: #8c6616;
+  --color-gold-800: #684b11;
+  --color-gold-900: #4a340a;
 }
 
 /* Custom Smooth Scroll */

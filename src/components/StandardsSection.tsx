@@ -12,7 +12,7 @@ export default function StandardsSection() {
           {/* Left Column: Core standard pitch */}
           <div className="lg:col-span-1 space-y-6">
             <div className="space-y-3">
-              <span className="font-mono text-[10px] tracking-[0.55em] text-amber-500 uppercase block">
+              <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase block">
                 MEDICAL GRADE ASSURANCES
               </span>
               <h2 className="text-3xl md:text-5xl font-sans font-light text-white tracking-tight leading-none uppercase">
@@ -26,14 +26,14 @@ export default function StandardsSection() {
             </p>
 
             <div className="p-5 rounded-xl bg-stone-900/40 border border-white/5 space-y-4">
-              <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase block">
+              <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase block">
                 SPECIALTY PRICING MATRIX
               </span>
               
               <div className="space-y-3 font-mono text-xs">
                 <div className="flex justify-between items-center text-neutral-400">
                   <span>Custom Draft/Consult</span>
-                  <strong className="text-white">FREE</strong>
+                  <strong className="text-[13px] tracking-widest font-extrabold text-gold-400 bg-gold-500/10 border border-gold-500/20 px-2.5 py-0.5 rounded shadow-sm animate-pulse">FREE</strong>
                 </div>
                 <div className="flex justify-between items-center text-neutral-400">
                   <span>Fine Line Precision Rate</span>
@@ -41,14 +41,14 @@ export default function StandardsSection() {
                 </div>
                 <div className="flex justify-between items-center text-neutral-400">
                   <span>Full Day Custom Session</span>
-                  <strong className="text-amber-400">{HOURLY_RATES.customDayRate.split(" ")[1]} / Day</strong>
+                  <strong className="text-gold-400">{HOURLY_RATES.customDayRate.split(" ")[1]} / Day</strong>
                 </div>
               </div>
 
               {/* Promo Banner */}
               <div className="pt-3.5 border-t border-white/5 space-y-1">
-                <span className="font-mono text-[8px] tracking-[0.25em] text-red-400 uppercase flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 text-red-400 animate-pulse" /> LIMITED PROMOTION
+                <span className="font-mono text-[8px] tracking-[0.25em] text-gold-400 uppercase flex items-center gap-1">
+                  <Sparkles className="w-3 h-3 text-gold-400 animate-pulse" /> LIMITED PROMOTION
                 </span>
                 <p className="text-xs font-sans font-bold text-stone-100 tracking-wide">
                   Promotion 3 Small Tattoo Only 1 Million
@@ -66,13 +66,13 @@ export default function StandardsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: idx * 0.05 }}
-                className="p-6 rounded-xl bg-stone-900/40 border border-white/5 space-y-3 hover:border-amber-500/10 transition-colors"
+                className="p-6 rounded-xl bg-stone-900/40 border border-white/5 space-y-3 hover:border-gold-500/10 transition-colors"
               >
-                <div className="w-9 h-9 rounded-full bg-amber-500/[0.04] border border-amber-500/20 flex items-center justify-center">
-                  {idx === 0 && <ShieldCheck className="w-5 h-5 text-amber-500" />}
-                  {idx === 1 && <Heart className="w-5 h-5 text-amber-500" />}
-                  {idx === 2 && <Activity className="w-5 h-5 text-amber-500" />}
-                  {idx === 3 && <Coffee className="w-5 h-5 text-amber-500" />}
+                <div className="w-9 h-9 rounded-full bg-gold-500/[0.04] border border-gold-500/20 flex items-center justify-center">
+                  {idx === 0 && <ShieldCheck className="w-5 h-5 text-gold-500" />}
+                  {idx === 1 && <Heart className="w-5 h-5 text-gold-500" />}
+                  {idx === 2 && <Activity className="w-5 h-5 text-gold-500" />}
+                  {idx === 3 && <Coffee className="w-5 h-5 text-gold-500" />}
                 </div>
 
                 <h3 className="text-sm font-sans font-extrabold text-white uppercase tracking-wider">

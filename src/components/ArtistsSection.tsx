@@ -9,7 +9,7 @@ export default function ArtistsSection() {
         
         {/* Header Title */}
         <div className="mb-16 space-y-3">
-          <span className="font-mono text-[10px] tracking-[0.55em] text-amber-500 uppercase">
+          <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase">
             RESIDENT MASTERS
           </span>
           <h2 className="text-3xl md:text-5xl font-sans font-light text-white tracking-tight leading-none uppercase">
@@ -29,7 +29,7 @@ export default function ArtistsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: idx * 0.1 }}
-              className="flex flex-col h-full rounded-2xl bg-stone-950 border border-white/5 overflow-hidden transition-all duration-300 hover:border-amber-500/20 hover:shadow-2xl hover:shadow-amber-950/5 group"
+              className="flex flex-col h-full rounded-2xl bg-stone-950 border border-white/5 overflow-hidden transition-all duration-300 hover:border-gold-500/20 hover:shadow-2xl hover:shadow-gold-950/5 group"
             >
               
               {/* Profile Bio Photo */}
@@ -46,7 +46,7 @@ export default function ArtistsSection() {
                 
                 {/* Floating Title Inside Photo */}
                 <div className="absolute bottom-6 left-6">
-                  <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase block mb-1">
+                  <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase block mb-1">
                     {artist.title}
                   </span>
                   <h3 className="text-2xl font-sans font-extrabold text-white uppercase tracking-tight">
@@ -89,7 +89,7 @@ export default function ArtistsSection() {
                     href={`https://instagram.com/${artist.instagram}`}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 text-neutral-400 hover:text-amber-400 transition-colors duration-300 w-fit cursor-pointer"
+                    className="flex items-center gap-2 text-neutral-400 hover:text-gold-400 transition-colors duration-300 w-fit cursor-pointer"
                   >
                     <Instagram className="w-3.5 h-3.5 text-neutral-500" />
                     <span>@{artist.instagram}</span>

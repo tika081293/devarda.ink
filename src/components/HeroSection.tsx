@@ -49,7 +49,7 @@ export default function HeroSection({
       <header className="relative z-10 w-full px-6 py-6 md:px-12 flex justify-between items-center bg-black/15 backdrop-blur-md border-b border-white/[0.04]">
         <div className="flex flex-col text-left">
           <span className="font-sans font-extrabold text-2xl tracking-[0.25em] text-white uppercase">
-            DEVARDA<span className="text-red-500 font-light">.ink</span>
+            DEVARDA<span className="text-gold-500 font-light">.ink</span>
           </span>
           <span className="font-mono text-[8px] uppercase tracking-[0.45em] text-neutral-400 mt-0.5">
             TATTOO STUDIO
@@ -58,18 +58,18 @@ export default function HeroSection({
 
         {/* Desktop Anchor Navigation */}
         <nav className="hidden lg:flex items-center space-x-8 text-[10px] font-mono tracking-widest text-neutral-300 uppercase">
-          <a href="#about" className="hover:text-red-400 transition-colors duration-300">ABOUT SANCTUARY</a>
-          <a href="#styles" className="hover:text-amber-400 transition-colors duration-300">CONCEPT PLANNER</a>
-          <a href="#portfolio" className="hover:text-red-400 transition-colors duration-300">PORTFOLIO</a>
-          <a href="#testimonials" className="hover:text-red-400 transition-colors duration-300">TESTIMONIALS</a>
-          <a href="#standards" className="hover:text-amber-400 transition-colors duration-300">HYGIENE</a>
+          <a href="#about" className="hover:text-gold-400 transition-colors duration-300">ABOUT SANCTUARY</a>
+          <a href="#styles" className="hover:text-gold-400 transition-colors duration-300">CONCEPT PLANNER</a>
+          <a href="#portfolio" className="hover:text-gold-400 transition-colors duration-300">PORTFOLIO</a>
+          <a href="#testimonials" className="hover:text-gold-400 transition-colors duration-300">TESTIMONIALS</a>
+          <a href="#standards" className="hover:text-gold-400 transition-colors duration-300">HYGIENE</a>
           <a 
             href="https://instagram.com/devarda.ink" 
             target="_blank" 
             rel="noreferrer" 
-            className="text-neutral-300 hover:text-red-400 transition-all flex items-center gap-1.5 border border-white/10 px-2.5 py-1 rounded bg-white/[0.03] hover:bg-red-500/10 hover:border-red-500/30 NormalCase"
+            className="text-neutral-300 hover:text-gold-400 transition-all flex items-center gap-1.5 border border-white/10 px-2.5 py-1 rounded bg-white/[0.03] hover:bg-gold-500/10 hover:border-gold-500/30 NormalCase"
           >
-            <Instagram className="w-3.5 h-3.5 text-red-500 shrink-0" /> INSTAGRAM
+            <Instagram className="w-3.5 h-3.5 text-gold-500 shrink-0" /> INSTAGRAM
           </a>
         </nav>
 
@@ -81,7 +81,7 @@ export default function HeroSection({
 
           <button
             onClick={onBookClick}
-            className="px-5 py-2.5 bg-red-600/10 hover:bg-red-600 hover:text-white border border-red-500/40 text-red-400 rounded-full text-[9px] font-mono tracking-widest transition-all duration-300 active:scale-95 cursor-pointer uppercase"
+            className="px-5 py-2.5 bg-gold-500/10 hover:bg-gold-500 hover:text-black border border-gold-500/40 text-gold-500 rounded-full text-[9px] font-mono tracking-widest transition-all duration-300 active:scale-95 cursor-pointer uppercase"
           >
             ALIGN INK
           </button>
@@ -96,9 +96,9 @@ export default function HeroSection({
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-stone-900/85 border border-red-500/20 text-[9px] tracking-[0.25em] font-mono text-amber-400 uppercase mb-6 backdrop-blur-md"
+          className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-stone-900/85 border border-gold-500/20 text-[9px] tracking-[0.25em] font-mono text-gold-400 uppercase mb-6 backdrop-blur-md"
         >
-          <Sparkles className="w-3.5 h-3.5 text-red-500 animate-[pulse_1.5s_infinite]" />
+          <Sparkles className="w-3.5 h-3.5 text-gold-500 animate-[pulse_1.5s_infinite]" />
           BALI’S BEST TATTOO STUDIO
         </motion.div>
 
@@ -110,7 +110,7 @@ export default function HeroSection({
           className="text-4xl sm:text-6xl lg:text-8.5xl font-serif font-light text-white mb-6 uppercase leading-none tracking-tight"
         >
           Ink Your <br />
-          <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-amber-500">
+          <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-gold-500">
             Story in Bali
           </span>
         </motion.h1>
@@ -137,10 +137,10 @@ export default function HeroSection({
         >
           <button
             onClick={onBookClick}
-            className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-xs font-mono font-bold tracking-widest rounded-lg shadow-xl shadow-red-950/40 hover:shadow-red-600/10 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer uppercase"
+            className="flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-gold-600 to-gold-700 hover:from-gold-700 hover:to-gold-800 text-black text-xs font-mono font-bold tracking-widest rounded-lg shadow-xl shadow-gold-950/40 hover:shadow-gold-500/10 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer uppercase"
           >
             Book Consultation
-            <ArrowRight className="w-4 h-4 text-white" />
+            <ArrowRight className="w-4 h-4 text-black" />
           </button>
 
           <button
@@ -152,7 +152,7 @@ export default function HeroSection({
 
           <button
             onClick={onStartQuizClick}
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-white/[0.04] hover:bg-amber-500/10 text-amber-400 border border-amber-500/25 rounded-lg text-xs font-mono tracking-widest transition-all duration-300 cursor-pointer uppercase"
+            className="flex items-center justify-center gap-2 px-8 py-4 bg-white/[0.04] hover:bg-gold-500/10 text-gold-400 border border-gold-500/25 rounded-lg text-xs font-mono tracking-widest transition-all duration-300 cursor-pointer uppercase"
           >
             CONCEPTS PLANNER
           </button>
@@ -162,7 +162,7 @@ export default function HeroSection({
       {/* Bottom Footer Info Row */}
       <div className="relative z-10 w-full px-6 py-6 md:px-12 flex flex-col md:flex-row gap-4 justify-between items-start md:items-center border-t border-white/[0.04] bg-gradient-to-t from-black to-transparent">
         <div className="flex items-center gap-2 text-neutral-400 text-xs font-mono">
-          <MapPin className="w-4 h-4 text-red-500" />
+          <MapPin className="w-4 h-4 text-gold-500" />
           <span>Jl. Raya Kerobokan No. 63 Bali, Indonesia</span>
         </div>
 

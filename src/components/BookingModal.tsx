@@ -177,7 +177,7 @@ Generated securely via digital luxury concierge system`;
               // BOOKING FORM
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase">
+                  <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase">
                     CONSULTATION REQUEST
                   </span>
                   <h3 className="text-xl md:text-2xl font-sans font-extrabold text-white uppercase tracking-tight">
@@ -200,7 +200,7 @@ Generated securely via digital luxury concierge system`;
                         value={customerName}
                         onChange={(e) => setCustomerName(e.target.value)}
                         placeholder="e.g., Alex Carter"
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
                     <div className="space-y-1">
@@ -211,7 +211,7 @@ Generated securely via digital luxury concierge system`;
                         value={customerEmail}
                         onChange={(e) => setCustomerEmail(e.target.value)}
                         placeholder="alex@carterguide.com"
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
                   </div>
@@ -224,7 +224,7 @@ Generated securely via digital luxury concierge system`;
                         value={customerPhone}
                         onChange={(e) => setCustomerPhone(e.target.value)}
                         placeholder="+62 821..."
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
                     <div className="space-y-1">
@@ -234,7 +234,7 @@ Generated securely via digital luxury concierge system`;
                         value={customerInstagram}
                         onChange={(e) => setCustomerInstagram(e.target.value)}
                         placeholder="@alex.travels"
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
                   </div>
@@ -246,7 +246,7 @@ Generated securely via digital luxury concierge system`;
                       <select
                         value={artistId}
                         onChange={(e) => setArtistId(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {ARTISTS.map(a => (
                           <option key={a.id} value={a.id}>{a.name} ({a.title})</option>
@@ -258,7 +258,7 @@ Generated securely via digital luxury concierge system`;
                       <select
                         value={styleId}
                         onChange={(e) => setStyleId(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {TATTOO_STYLES.map(s => (
                           <option key={s.id} value={s.id}>{s.name}</option>
@@ -274,7 +274,7 @@ Generated securely via digital luxury concierge system`;
                       <select
                         value={placement}
                         onChange={(e) => setPlacement(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {PLACEMENTS.map(p => (
                           <option key={p} value={p}>{p}</option>
@@ -286,7 +286,7 @@ Generated securely via digital luxury concierge system`;
                       <select
                         value={size}
                         onChange={(e) => setSize(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {SIZES.map(s => (
                           <option key={s} value={s}>{s}</option>
@@ -303,7 +303,7 @@ Generated securely via digital luxury concierge system`;
                       onChange={(e) => setConcept(e.target.value)}
                       placeholder="Describe symbols, geometric layers, reference points, or the general feeling you want."
                       rows={3}
-                      className="w-full bg-neutral-900 border border-white/5 rounded-lg p-3 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors placeholder-neutral-500"
+                      className="w-full bg-neutral-900 border border-white/5 rounded-lg p-3 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors placeholder-neutral-500"
                     />
                   </div>
 
@@ -317,7 +317,7 @@ Generated securely via digital luxury concierge system`;
                           required
                           value={date}
                           onChange={(e) => setDate(e.target.value)}
-                          className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                          className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                         />
                       </div>
                     </div>
@@ -326,7 +326,7 @@ Generated securely via digital luxury concierge system`;
                       <select
                         value={timeSlot}
                         onChange={(e) => setTimeSlot(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-amber-500 transition-colors"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {TIME_SLOTS.map(slot => (
                           <option key={slot} value={slot}>{slot}</option>
@@ -344,7 +344,7 @@ Generated securely via digital luxury concierge system`;
                   
                   <button
                     type="submit"
-                    className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-black font-mono font-bold text-xs tracking-widest rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 uppercase"
+                    className="px-6 py-3 bg-gold-500 hover:bg-gold-600 text-black font-mono font-bold text-xs tracking-widest rounded-lg cursor-pointer transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 uppercase"
                   >
                     SUBMIT INK PROPOSAL
                   </button>
@@ -353,12 +353,12 @@ Generated securely via digital luxury concierge system`;
             ) : (
               // BOOKING CONFIRMATION SLIP
               <div className="text-center py-6 space-y-6">
-                <div className="w-12 h-12 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mx-auto text-amber-500 animate-bounce">
+                <div className="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mx-auto text-gold-500 animate-bounce">
                   <CheckCircle className="w-6 h-6" />
                 </div>
                 
                 <div className="space-y-2">
-                  <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase">PROPOSAL GENERATED</span>
+                  <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase">PROPOSAL GENERATED</span>
                   <h3 className="text-2xl font-sans font-extrabold text-white uppercase tracking-tight">Your Slot is Provisioned</h3>
                   <p className="text-xs text-neutral-400 max-w-md mx-auto">
                     We have compiled your design sheet and synchronized it with <strong>{selectedArtist?.name}</strong>. A boutique manager will connect with you via email or WhatsApp shortly.
@@ -389,7 +389,7 @@ Generated securely via digital luxury concierge system`;
                   </div>
                   <div className="flex justify-between border-b border-white/[0.04] pb-2">
                     <span className="text-neutral-500">SCHEDULING TIMESLOT</span>
-                    <strong className="text-amber-400 text-right">{confirmedBooking.date} / {confirmedBooking.timeSlot}</strong>
+                    <strong className="text-gold-400 text-right">{confirmedBooking.date} / {confirmedBooking.timeSlot}</strong>
                   </div>
                 </div>
 

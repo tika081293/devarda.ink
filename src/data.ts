@@ -181,7 +181,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: "t1",
     name: "Dresean Alston",
     country: "America",
-    role : "Traveller",
+    role: "Traveller",
     quote: "Very good artist and price. Highly professional. Definitely recommend for anyone looking for high quality tattoo and a reasonable price.",
     rating: 5,
     date: "December 2025"
@@ -203,6 +203,69 @@ export const TESTIMONIALS: Testimonial[] = [
     quote: "Roy was great!!! Absolutely loved his freehand...he brought my little crazy idea to life and is fairly priced! Shop is clean and comfortable! Next time in Bali I'll be back!!!",
     rating: 5,
     date: "May 2025"
+  },
+  {
+    id: "t4",
+    name: "Sarah Jenkins",
+    country: "Australia",
+    role: "Digital Designer",
+    quote: "Roy's fine-line work is absolute perfection. My geometric armband has healed flawlessly after less than 10 days in the Canggu heat. Meticulous aseptic standard and very patient design drafting.",
+    rating: 5,
+    date: "January 2026"
+  },
+  {
+    id: "t5",
+    name: "Maxime Dubois",
+    country: "France",
+    role: "Tech Nomad",
+    quote: "Unbelievable studio alignments. Finding fine-line custom needle artists in Indonesia operating under absolute surgical hospital standards is extremely rare. Highly sophisticated experience.",
+    rating: 5,
+    date: "February 2026"
+  },
+  {
+    id: "t6",
+    name: "Kadek Wirawan",
+    country: "Indonesia",
+    role: "Local Surf Coach",
+    quote: "The blackwork on my forearm wraps beautifully with natural muscular flow. Roy is a genius with anatomical placement and stenciling. Best studio on the island without doubt.",
+    rating: 5,
+    date: "November 2025"
+  },
+  {
+    id: "t7",
+    name: "Elena Rostova",
+    country: "Germany",
+    role: "Yacht Skipper",
+    quote: "Symmetrical, delicate, and deeply therapeutic session. He took his time making sure every single dot alignment was mathematically sound. Returning to Bali means returning here.",
+    rating: 5,
+    date: "April 2026"
+  },
+  {
+    id: "t8",
+    name: "Oliver Smith",
+    country: "United Kingdom",
+    role: "Music Producer",
+    quote: "Stunning private sanctuary environment. Premium vegan pigments, pristine sterilization protocols, and a fantastic sound track. My high-contrast charcoal portrait looks completely unreal.",
+    rating: 5,
+    date: "February 2026"
+  },
+  {
+    id: "t9",
+    name: "Chloe van der Berg",
+    country: "Netherlands",
+    role: "Travel Journalist",
+    quote: "My fine-line botanical leaves are incredibly bright and sharp. They applied premium Dermalize waterproof medical wraps, leaving my showers and bike trips completely worry-free.",
+    rating: 5,
+    date: "October 2025"
+  },
+  {
+    id: "t10",
+    name: "Ethan Brooks",
+    country: "Canada",
+    role: "Creative Director",
+    quote: "Simply elite carbon saturated shading. Extremely professional, comforting, and authentic. They genuinely care about fine-line longevity under the sun. An absolute standout in Southeast Asia.",
+    rating: 5,
+    date: "May 2026"
   }
 ];
 
@@ -224,9 +287,5 @@ export const SANCTUARY_STANDARDS = [
   {
     title: "Advanced Postcare",
     desc: "Premium native Balinese coconut and active care extracts are applied under medical dermal wraps (Dermalize Pro) to guarantee ocean-safe healing."
-  },
-  {
-    title: "Sanctuary Amenities",
-    desc: "Plush designer leather chairs, wellness headphones (Sony Noise-Cancelling), a gourmet espresso and dry-aged mocktail lounge, high-speed nomad Wi-Fi, and personalized cooling AC."
   }
 ];

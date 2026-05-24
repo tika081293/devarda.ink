@@ -64,7 +64,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
     <section id="styles" className="relative bg-black py-24 px-6 md:px-12 lg:px-24 border-b border-white/[0.03]">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 space-y-3">
-          <span className="font-mono text-[10px] tracking-[0.55em] text-amber-500 uppercase">
+          <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase">
             VIP ART PLANNING STUDIO
           </span>
           <h2 className="text-3xl md:text-5xl font-sans font-light text-white tracking-tight leading-none uppercase">
@@ -85,7 +85,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                 <div
                   className={`w-7 h-7 rounded-full flex items-center justify-center font-mono text-xs transition-colors duration-300 ${
                     step >= num
-                      ? "bg-amber-500 text-black font-bold"
+                      ? "bg-gold-500 text-black font-semibold"
                       : "bg-neutral-900 text-neutral-500 border border-white/5"
                   }`}
                 >
@@ -94,7 +94,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                 {num < 5 && (
                   <div
                     className={`h-[1px] w-8 md:w-16 transition-colors duration-300 ${
-                      step > num ? "bg-amber-500" : "bg-neutral-900"
+                      step > num ? "bg-gold-500" : "bg-neutral-900"
                     }`}
                   />
                 )}
@@ -115,20 +115,20 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
               >
                 <div>
                   <h3 className="text-lg md:text-xl font-sans text-white uppercase tracking-tight font-extrabold mb-1 flex items-center gap-2">
-                    <Paintbrush className="w-5 h-5 text-amber-500" />
+                    <Paintbrush className="w-5 h-5 text-gold-500" />
                     Step 1: Choose Your Core Ink Style
                   </h3>
-                  <p className="text-xs text-neutral-400 font-mono">Select a signature specialty style practiced in our Kerobokan sanctuary.</p>
+                  <p className="text-xs text-neutral-400 font-mono">Select a specialty style practiced in our Kerobokan sanctuary.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {TATTOO_STYLES.map((style) => (
                     <div
-                      key={style.id}
+                       key={style.id}
                       onClick={() => setSelectedStyle(style.id)}
                       className={`p-5 rounded-xl border transition-all duration-300 cursor-pointer ${
                         selectedStyle === style.id
-                          ? "border-amber-500 bg-amber-500/[0.05]"
+                          ? "border-gold-500 bg-gold-500/[0.05]"
                           : "border-white/5 bg-neutral-900/40 hover:border-white/10 hover:bg-neutral-900/70"
                       }`}
                     >
@@ -137,7 +137,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                           {style.name}
                         </span>
                         {selectedStyle === style.id && (
-                          <div className="w-4 h-4 rounded-full bg-amber-500 flex items-center justify-center">
+                          <div className="w-4 h-4 rounded-full bg-gold-500 flex items-center justify-center">
                             <Check className="w-3 h-3 text-black stroke-[3]" />
                           </div>
                         )}
@@ -182,7 +182,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
               >
                 <div>
                   <h3 className="text-lg md:text-xl font-sans text-white uppercase tracking-tight font-extrabold mb-1 flex items-center gap-2">
-                    <Activity className="w-5 h-5 text-amber-500" />
+                    <Activity className="w-5 h-5 text-gold-500" />
                     Step 2: Anatomy & Healing Placements
                   </h3>
                   <p className="text-xs text-neutral-400 font-mono">Select where on the body canvas you envision the piece. Care details are estimated for Bali's weather.</p>
@@ -195,7 +195,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                       onClick={() => setSelectedPlacement(place.id)}
                       className={`p-4 rounded-xl border transition-all duration-300 cursor-pointer flex justify-between items-center ${
                         selectedPlacement === place.id
-                          ? "border-amber-500 bg-amber-500/[0.05]"
+                          ? "border-gold-500 bg-gold-500/[0.05]"
                           : "border-white/5 bg-neutral-900/40 hover:border-white/10 hover:bg-neutral-900/75"
                       }`}
                     >
@@ -210,7 +210,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                         </div>
                       </div>
                       {selectedPlacement === place.id && (
-                        <div className="w-4 h-4 rounded-full bg-amber-500 flex items-center justify-center shrink-0">
+                        <div className="w-4 h-4 rounded-full bg-gold-500 flex items-center justify-center shrink-0">
                           <Check className="w-3 h-3 text-black stroke-[3]" />
                         </div>
                       )}
@@ -248,7 +248,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
               >
                 <div>
                   <h3 className="text-lg md:text-xl font-sans text-white uppercase tracking-tight font-extrabold mb-1 flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-amber-500" />
+                    <HelpCircle className="w-5 h-5 text-gold-500" />
                     Step 3: Approximate Canvas Dimensions
                   </h3>
                   <p className="text-xs text-neutral-400 font-mono">This allows our masters to calibrate precise density, stencil parameters, and drafting times.</p>
@@ -261,7 +261,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                       onClick={() => setSelectedSize(sz.id)}
                       className={`p-5 rounded-xl border transition-all duration-300 cursor-pointer flex justify-between items-center ${
                         selectedSize === sz.id
-                          ? "border-amber-500 bg-amber-500/[0.05]"
+                          ? "border-gold-500 bg-gold-500/[0.05]"
                           : "border-white/5 bg-neutral-900/40 hover:border-white/10 hover:bg-neutral-900/75"
                       }`}
                     >
@@ -271,11 +271,11 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                         </span>
                         <div className="flex gap-4 text-[10px] font-mono text-neutral-400">
                           <span>Structure: <strong className="text-white">{sz.scale}</strong></span>
-                          <span>Time Estimate: <strong className="text-amber-400">{sz.sessionEst}</strong></span>
+                          <span>Time Estimate: <strong className="text-gold-400">{sz.sessionEst}</strong></span>
                         </div>
                       </div>
                       {selectedSize === sz.id && (
-                        <div className="w-4 h-4 rounded-full bg-amber-500 flex items-center justify-center shrink-0">
+                        <div className="w-4 h-4 rounded-full bg-gold-500 flex items-center justify-center shrink-0">
                           <Check className="w-3 h-3 text-black stroke-[3]" />
                         </div>
                       )}
@@ -313,7 +313,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
               >
                 <div>
                   <h3 className="text-lg md:text-xl font-sans text-white uppercase tracking-tight font-extrabold mb-1 flex items-center gap-2">
-                    <FileSpreadsheet className="w-5 h-5 text-amber-500" />
+                    <FileSpreadsheet className="w-5 h-5 text-gold-500" />
                     Step 4: Express Your Artistic Narrative
                   </h3>
                   <p className="text-xs text-neutral-400 font-mono">Describe the feelings, elements, or journey symbols (e.g., Balinese waves, a geometric compass, abstract lunar designs) you want integrated.</p>
@@ -327,7 +327,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                       onChange={(e) => setConceptText(e.target.value)}
                       placeholder="e.g., I want an fine-line ornamental mandala on my forearm. I want a small crescent moon embedded, reflecting a clean geometry look without too much dark saturation...."
                       rows={4}
-                      className="w-full bg-neutral-900 border border-white/10 rounded-xl p-4 text-xs font-sans text-white placeholder-neutral-500 focus:outline-none focus:border-amber-500 transition-colors"
+                      className="w-full bg-neutral-900 border border-white/10 rounded-xl p-4 text-xs font-sans text-white placeholder-neutral-500 focus:outline-none focus:border-gold-500 transition-colors"
                     />
                   </div>
 
@@ -340,7 +340,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                           onClick={() => setPreferredArtist(artist.id)}
                           className={`p-3 rounded-xl border text-center cursor-pointer transition-all ${
                             preferredArtist === artist.id
-                              ? "border-amber-500 bg-amber-500/[0.05]"
+                              ? "border-gold-500 bg-gold-500/[0.05]"
                               : "border-white/5 bg-neutral-900/40 hover:border-white/10"
                           }`}
                         >
@@ -363,7 +363,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                   <button
                     disabled={!conceptText.trim()}
                     onClick={() => setStep(5)}
-                    className="px-6 py-3 bg-amber-500 text-black font-mono text-xs font-bold rounded-lg cursor-pointer hover:bg-amber-600 transition-colors duration-300 disabled:opacity-25 disabled:cursor-not-allowed uppercase"
+                    className="px-6 py-3 bg-gold-500 text-black font-mono text-xs font-semibold rounded-lg cursor-pointer hover:bg-gold-600 transition-colors duration-300 disabled:opacity-25 disabled:cursor-not-allowed uppercase"
                   >
                     COMPILE ART TICKET
                   </button>
@@ -381,15 +381,15 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                 className="space-y-6 text-center"
               >
                 {/* Simulated luxury Ticket wrapper with jagged border effects */}
-                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-neutral-900/90 to-neutral-950 border-2 border-dashed border-amber-500/40 p-6 md:p-8 space-y-6">
+                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-neutral-900/90 to-neutral-950 border-2 border-dashed border-gold-500/40 p-6 md:p-8 space-y-6">
                   
                   {/* Luxury Seals */}
                   <div className="flex justify-between items-start">
-                    <div className="text-left font-mono text-[9px] text-amber-500 tracking-[0.2em] uppercase">
+                    <div className="text-left font-mono text-[9px] text-gold-500 tracking-[0.2em] uppercase">
                       VIP CONSULTATION RECORD
                       <span className="block text-[8px] text-neutral-500 tracking-normal font-sans mt-0.5">DEV-BALI-{Math.floor(Math.random() * 90000) + 10000}</span>
                     </div>
-                    <div className="px-2 py-1 rounded bg-amber-500 text-black font-mono text-[8px] font-bold uppercase tracking-wider">
+                    <div className="px-2 py-1 rounded bg-gold-500 text-black font-mono text-[8px] font-semibold uppercase tracking-wider">
                       CONFIRMED READY
                     </div>
                   </div>
@@ -406,7 +406,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                     </div>
                     <div>
                       <span className="font-mono text-[8px] tracking-wider text-neutral-500 block uppercase">SIZE CATEGORY</span>
-                      <strong className="text-[11px] font-sans text-amber-400 uppercase block mt-0.5">{currentSizeData?.name.split(" ")[0] || "Custom"}</strong>
+                      <strong className="text-[11px] font-sans text-gold-400 uppercase block mt-0.5">{currentSizeData?.name.split(" ")[0] || "Custom"}</strong>
                     </div>
                     <div>
                       <span className="font-mono text-[8px] tracking-wider text-neutral-500 block uppercase">PREFERRED ARTIST</span>
@@ -416,7 +416,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
 
                   {/* Story section */}
                   <div className="text-left space-y-1.5 bg-black/45 p-4 rounded border border-white/[0.03]">
-                    <span className="font-mono text-[8px] tracking-wider text-amber-500 uppercase block">CONCEPT BRIEF TRANSCRIPT</span>
+                    <span className="font-mono text-[8px] tracking-wider text-gold-500 uppercase block">CONCEPT BRIEF TRANSCRIPT</span>
                     <p className="text-xs text-neutral-300 font-sans font-light italic leading-relaxed">
                       "{conceptText}"
                     </p>
@@ -425,7 +425,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                   {/* Recovery parameters */}
                   <div className="flex justify-between items-center text-xs font-mono text-neutral-400">
                     <span>Est. Sessions: <strong className="text-white">{currentSizeData?.sessionEst || "1 Session"}</strong></span>
-                    <span>Sanctuary Unit: <strong className="text-amber-400">Kerobokan Lounge 3</strong></span>
+                    <span>Sanctuary Unit: <strong className="text-gold-400">Kerobokan Lounge 3</strong></span>
                   </div>
 
                 </div>
@@ -448,7 +448,7 @@ export default function StyleQuiz({ onPreFillBooking }: StyleQuizProps) {
                     <button
                       onClick={handleCreateBrief}
                       id="btn-quiz-lock-booking"
-                      className="flex items-center justify-center gap-2 px-8 py-3 bg-amber-500 hover:bg-amber-600 text-black font-mono text-xs font-bold tracking-widest rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer uppercase"
+                      className="flex items-center justify-center gap-2 px-8 py-3 bg-gold-500 hover:bg-gold-600 text-black font-mono text-xs font-semibold tracking-widest rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer uppercase"
                     >
                       <Share2 className="w-3.5 h-3.5" />
                       PRE-FILL BOOKING FORM

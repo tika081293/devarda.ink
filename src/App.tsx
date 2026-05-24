@@ -110,7 +110,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans antialiased overflow-x-hidden selection:bg-red-500 selection:text-white">
+    <div className="min-h-screen bg-black text-white font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-black">
       
       {/* 1. Cinematic Loading Screen */}
       <CinematicLoader onComplete={() => setLoaderFinished(true)} />
@@ -128,27 +128,27 @@ export default function App() {
       >
         <a href="#hero-section" className="flex flex-col text-left">
           <span className="font-sans font-bold text-lg tracking-[0.2em] text-white">
-            DEVARDA<span className="text-red-500 font-light">.ink</span>
+            DEVARDA<span className="text-gold-500 font-light">.ink</span>
           </span>
         </a>
 
         {/* Desktop Anchor links */}
         <div className="hidden lg:flex items-center gap-8 text-[10px] font-mono tracking-widest text-neutral-400">
-          <a href="#about" className="hover:text-amber-500 transition-colors">ABOUT</a>
-          <a href="#styles" className="hover:text-amber-500 transition-colors">PLANNER</a>
-          <a href="#portfolio" className="hover:text-amber-500 transition-colors">PORTFOLIO</a>
-          <a href="#testimonials" className="hover:text-amber-500 transition-colors">TESTIMONIALS</a>
-          <a href="#standards" className="hover:text-amber-500 transition-colors">STANDARDS</a>
+          <a href="#about" className="hover:text-gold-500 transition-colors">ABOUT</a>
+          <a href="#styles" className="hover:text-gold-500 transition-colors">PLANNER</a>
+          <a href="#portfolio" className="hover:text-gold-500 transition-colors">PORTFOLIO</a>
+          <a href="#testimonials" className="hover:text-gold-500 transition-colors">TESTIMONIALS</a>
+          <a href="#standards" className="hover:text-gold-500 transition-colors">STANDARDS</a>
           <a 
             href="https://instagram.com/devarda.ink" 
             target="_blank" 
             rel="noreferrer" 
-            className="text-neutral-300 hover:text-red-400 transition-all flex items-center gap-1.5 border border-white/10 px-2.5 py-1 rounded bg-white/[0.03] hover:bg-red-500/10 hover:border-red-500/30"
+            className="text-neutral-300 hover:text-gold-400 transition-all flex items-center gap-1.5 border border-white/10 px-2.5 py-1 rounded bg-white/[0.03] hover:bg-gold-500/10 hover:border-gold-500/30"
           >
-            <Instagram className="w-3.5 h-3.5 text-red-500 shrink-0" /> @DEVARDA.INK
+            <Instagram className="w-3.5 h-3.5 text-gold-500 shrink-0" /> @DEVARDA.INK
           </a>
           {localBookings.length > 0 && (
-            <a href="#vip-board" className="text-red-400 hover:text-red-500 font-extrabold transition-colors">
+            <a href="#vip-board" className="text-gold-400 hover:text-gold-500 font-extrabold transition-colors">
               MY BOARD ({localBookings.length})
             </a>
           )}
@@ -156,7 +156,7 @@ export default function App() {
 
         <button
           onClick={handleOpenGeneralBooking}
-          className="px-4 py-2 border border-red-500 bg-red-500/10 hover:bg-red-650 hover:text-white rounded text-[10px] font-mono tracking-widest transition-colors duration-300 cursor-pointer"
+          className="px-4 py-2 border border-gold-500 bg-gold-500/10 hover:bg-gold-600 hover:text-black hover:font-semibold rounded text-[10px] font-mono tracking-widest transition-colors duration-300 cursor-pointer"
         >
           BOOK CONSULTATION
         </button>
@@ -167,10 +167,10 @@ export default function App() {
         href="https://instagram.com/devarda.ink"
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-24 left-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 hover:brightness-110 text-white shadow-xl shadow-purple-950/40 active:scale-95 transition-all group"
+        className="fixed bottom-24 left-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-gold-600 via-zinc-800 to-black hover:brightness-110 text-white shadow-xl shadow-gold-950/40 border border-gold-500/20 active:scale-95 transition-all group"
       >
         <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-white rounded-full border-2 border-black animate-pulse flex items-center justify-center pointer-events-none">
-          <span className="w-1.5 h-1.5 bg-rose-500 rounded-full"></span>
+          <span className="w-1.5 h-1.5 bg-gold-500 rounded-full"></span>
         </span>
         
         {/* Slide-out tooltip helper */}
@@ -186,9 +186,9 @@ export default function App() {
         href="https://api.whatsapp.com/send?phone=62895355596315&text=Hello%20Devarda.ink%20Bali!%20I'm%20interested%20in%20setting%20up%20a%20personal%20tattoo%20design%20consultation."
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 left-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl shadow-emerald-900/30 active:scale-95 transition-all group"
+        className="fixed bottom-6 left-6 z-40 flex items-center justify-center w-14 h-14 rounded-full bg-neutral-900 hover:bg-neutral-850 border border-gold-500/30 text-gold-400 shadow-xl shadow-gold-950/30 active:scale-95 transition-all group"
       >
-        <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-red-500 rounded-full border-2 border-black animate-pulse flex items-center justify-center pointer-events-none">
+        <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-gold-500 rounded-full border-2 border-black animate-pulse flex items-center justify-center pointer-events-none">
           <span className="w-1.5 h-1.5 bg-white rounded-full"></span>
         </span>
         
@@ -203,7 +203,7 @@ export default function App() {
       {/* 5. Floating Mobile Drawer Trigger */}
       <button
         onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 p-4 rounded-full bg-red-600 text-white shadow-lg shadow-red-950/40 active:scale-95 transition-all cursor-pointer hover:bg-red-700"
+        className="lg:hidden fixed bottom-6 right-6 z-40 p-4 rounded-full bg-gold-500 text-black font-semibold shadow-lg shadow-gold-950/40 active:scale-95 transition-all cursor-pointer hover:bg-gold-600"
       >
         {isMobileNavOpen ? <X className="w-5 h-5 stroke-[2.5]" /> : <AlignJustify className="w-5 h-5 stroke-[2.5]" />}
       </button>
@@ -215,20 +215,20 @@ export default function App() {
             className="fixed inset-0 z-40 bg-black/98 backdrop-blur-xl flex flex-col justify-center items-center gap-6 text-base font-sans font-extrabold tracking-widest text-white uppercase text-center"
             onClick={() => setIsMobileNavOpen(false)}
           >
-            <span className="font-mono text-[9px] tracking-[0.45em] text-red-500 mb-4 block">DEVARDA NAVIGATION</span>
-            <a href="#about" className="hover:text-red-400 py-1 transition-colors">ABOUT SANCTUARY</a>
-            <a href="#styles" className="hover:text-red-400 py-1 transition-colors">CONCEPT PLANNER</a>
-            <a href="#portfolio" className="hover:text-red-400 py-1 transition-colors">PORTFOLIO</a>
-            <a href="#testimonials" className="hover:text-red-400 py-1 transition-colors">TESTIMONIALS</a>
-            <a href="#standards" className="hover:text-red-400 py-1 transition-colors">HYGIENE</a>
+            <span className="font-mono text-[9px] tracking-[0.45em] text-gold-500 mb-4 block">DEVARDA NAVIGATION</span>
+            <a href="#about" className="hover:text-gold-400 py-1 transition-colors">ABOUT SANCTUARY</a>
+            <a href="#styles" className="hover:text-gold-400 py-1 transition-colors">CONCEPT PLANNER</a>
+            <a href="#portfolio" className="hover:text-gold-400 py-1 transition-colors">PORTFOLIO</a>
+            <a href="#testimonials" className="hover:text-gold-400 py-1 transition-colors">TESTIMONIALS</a>
+            <a href="#standards" className="hover:text-gold-400 py-1 transition-colors">HYGIENE</a>
             {localBookings.length > 0 && (
-              <a href="#vip-board" className="text-amber-500 underline decoration-dashed py-1">
+              <a href="#vip-board" className="text-gold-500 underline decoration-dashed py-1">
                 MY VIP BOARDS ({localBookings.length})
               </a>
             )}
             <button
               onClick={handleOpenGeneralBooking}
-              className="mt-6 px-8 py-3 bg-red-600 hover:bg-red-700 text-white text-xs font-mono font-bold tracking-widest rounded-lg"
+              className="mt-6 px-8 py-3 bg-gold-500 hover:bg-gold-600 text-black text-xs font-mono font-semibold tracking-widest rounded-lg"
             >
               SECURE SLOT
             </button>
@@ -249,6 +249,12 @@ export default function App() {
         }}
       />
 
+      {/* Masonry Portfolio Grid (Moved to top with bento-grid presentation) */}
+      <PortfolioGallery />
+
+      {/* Interactive Review Slider Carousel */}
+      <Testimonials />
+
       {/* About Section */}
       <AboutSection />
 
@@ -258,12 +264,6 @@ export default function App() {
       {/* Sacred Styles Design Planner Quiz */}
       <StyleQuiz onPreFillBooking={handlePreFillBooking} />
 
-      {/* Masonry Portfolio Grid */}
-      <PortfolioGallery />
-
-      {/* Interactive Review Slider Carousel */}
-      <Testimonials />
-
       {/* Autoclave Sanitaries & Standards */}
       <StandardsSection />
 
@@ -271,7 +271,7 @@ export default function App() {
       <section id="vip-board" className="bg-neutral-950 py-24 px-6 md:px-12 lg:px-24 border-b border-white/[0.03] relative">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 space-y-2">
-            <span className="font-mono text-[9px] tracking-[0.55em] text-red-500 uppercase block">
+            <span className="font-mono text-[9px] tracking-[0.55em] text-gold-500 uppercase block">
               YOUR PERSONAL SPACE
             </span>
             <h2 className="text-2xl md:text-3xl font-serif font-light text-white uppercase">
@@ -291,7 +291,7 @@ export default function App() {
                 >
                   <div className="space-y-3 flex-1 text-left">
                     <div className="flex gap-2 items-center flex-wrap">
-                      <span className="px-2.5 py-0.5 rounded bg-red-500 text-white font-mono text-[9px] font-bold uppercase tracking-wider">
+                      <span className="px-2.5 py-0.5 rounded bg-gold-500 text-black font-semibold font-mono text-[9px] uppercase tracking-wider">
                         {b.id}
                       </span>
                       <span className="text-xs font-mono text-neutral-400">
@@ -310,11 +310,11 @@ export default function App() {
                       </div>
                       <div>
                         <span className="text-[9px] text-neutral-500 block">TARGET PLACEMENT</span>
-                        <strong className="text-amber-500 font-sans">{b.placement || "Custom area"}</strong>
+                        <strong className="text-gold-500 font-sans">{b.placement || "Custom area"}</strong>
                       </div>
                       <div>
                         <span className="text-[9px] text-neutral-500 block">TIER FRAME</span>
-                        <strong className="text-amber-500 text-[11px] truncate block max-w-full">{b.size}</strong>
+                        <strong className="text-gold-500 text-[11px] truncate block max-w-full">{b.size}</strong>
                       </div>
                     </div>
 
@@ -332,7 +332,7 @@ export default function App() {
                           handleDeleteBooking(b.id);
                         }
                       }}
-                      className="flex items-center gap-1.5 px-3 py-2 bg-neutral-900 border border-red-500/20 hover:border-red-500/60 hover:bg-red-500/10 text-red-400 text-[10px] font-mono tracking-widest rounded transition-all cursor-pointer"
+                      className="flex items-center gap-1.5 px-3 py-2 bg-neutral-900 border border-gold-500/20 hover:border-gold-500/60 hover:bg-gold-500/10 text-gold-400 text-[10px] font-mono tracking-widest rounded transition-all cursor-pointer"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                       CANCEL
@@ -363,7 +363,7 @@ export default function App() {
         <div className="max-w-3xl mx-auto">
           
           <div className="text-center mb-16 space-y-3">
-            <span className="font-mono text-[10px] tracking-[0.55em] text-red-500 uppercase block">
+            <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase block">
               NOMAD ALIGNMENTS & INFO
             </span>
             <h2 className="text-3xl md:text-5xl font-serif font-light uppercase text-white tracking-tight leading-none">
@@ -386,7 +386,7 @@ export default function App() {
                     <span className="text-xs md:text-sm font-sans font-bold text-white uppercase tracking-tight pr-4">
                       {faq.question}
                     </span>
-                    <span className="text-amber-500 font-extrabold font-mono text-base ml-2 shrink-0">
+                    <span className="text-gold-500 font-extrabold font-mono text-base ml-2 shrink-0">
                       {works ? "—" : "+"}
                     </span>
                   </button>
@@ -414,7 +414,7 @@ export default function App() {
           <div className="space-y-6 text-left">
             <div className="space-y-1">
               <span className="font-sans font-extrabold text-xl tracking-[0.25em] text-white uppercase">
-                DEVARDA<span className="text-red-500 font-light">.ink</span>
+                DEVARDA<span className="text-gold-500 font-light">.ink</span>
               </span>
               <p className="text-[10px] font-mono text-neutral-500 tracking-wider">KEROBOKAN, BALI</p>
             </div>
@@ -428,13 +428,13 @@ export default function App() {
                 href="https://instagram.com/devarda.ink"
                 target="_blank"
                 rel="noreferrer"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-red-500 hover:border-red-500 transition-colors cursor-pointer"
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-gold-500 hover:border-gold-500 transition-colors cursor-pointer"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="mailto:devardaink@gmail.com"
-                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-amber-500 hover:border-amber-500 transition-colors cursor-pointer"
+                className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-gold-500 hover:border-gold-500 transition-colors cursor-pointer"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -453,7 +453,7 @@ export default function App() {
             
             <div className="space-y-4 text-neutral-400 font-sans font-light text-xs">
               <div className="flex gap-2 items-start">
-                <MapPin className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-gold-500 shrink-0 mt-0.5" />
                 <span>Jl. Raya Kerobokan No. 63 Bali, Indonesia</span>
               </div>
               
@@ -486,9 +486,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono tracking-wider text-neutral-600">
           <span>© 2026 DEVARDA.INK CUSTOM STUDIO • KEROBOKAN • ALL RIGHTS RESERVED.</span>
           <div className="flex gap-4 mt-4 sm:mt-0">
-            <a href="#about" className="hover:text-amber-500">TERMS & AUTOCLAVE PROTOCOLS</a>
+            <a href="#about" className="hover:text-gold-500">TERMS & AUTOCLAVE PROTOCOLS</a>
             <span>•</span>
-            <a href="#standards" className="hover:text-amber-500">HEALING MANUAL</a>
+            <a href="#standards" className="hover:text-gold-500">HEALING MANUAL</a>
           </div>
         </div>
 

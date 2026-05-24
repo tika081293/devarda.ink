@@ -171,19 +171,19 @@ _Generated securely via digital luxury concierge system_`;
     <section id="booking-section-live" className="py-24 px-6 md:px-12 lg:px-24 bg-black border-b border-white/[0.03] relative overflow-hidden">
       
       {/* Visual Ambient glow backgrounds */}
-      <div className="absolute top-1/4 right-[10%] w-96 h-96 bg-red-950/15 rounded-full blur-[130px] pointer-events-none"></div>
+      <div className="absolute top-1/4 right-[10%] w-96 h-96 bg-gold-950/15 rounded-full blur-[130px] pointer-events-none"></div>
       <div className="absolute bottom-1/4 left-[5%] w-[380px] h-[380px] bg-stone-900/10 rounded-full blur-[140px] pointer-events-none"></div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         
         {/* Header Block */}
         <div className="text-center mb-16 space-y-4">
-          <span className="font-mono text-[10px] tracking-[0.55em] text-red-500 uppercase block">
+          <span className="font-mono text-[10px] tracking-[0.55em] text-gold-500 uppercase block">
             SESSION ALIGNMENT PROPOSALS
           </span>
           <h2 className="text-3xl md:text-5xl font-serif font-light text-white tracking-tight uppercase leading-none">
             INCEPTION OF <br />
-            <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-amber-500">
+            <span className="font-sans font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-100 to-gold-500">
               YOUR SKIN ARTWORK
             </span>
           </h2>
@@ -206,7 +206,7 @@ _Generated securely via digital luxury concierge system_`;
               >
                 {/* Section titles */}
                 <div className="pb-3 border-b border-white/[0.03] flex justify-between items-center">
-                  <span className="font-mono text-[10px] text-amber-500 tracking-widest uppercase">
+                  <span className="font-mono text-[10px] text-gold-500 tracking-widest uppercase">
                     I. CONTACT CHANNELS
                   </span>
                   <span className="font-mono text-[8px] text-neutral-500">SECURE SSL SHIELD ACTIVE</span>
@@ -224,7 +224,7 @@ _Generated securely via digital luxury concierge system_`;
                       value={customerName}
                       onChange={(e) => setCustomerName(e.target.value)}
                       placeholder="e.g., Charles Sterling"
-                      className="w-full bg-neutral-900/50 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
+                      className="w-full bg-neutral-900/50 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
                     />
                   </div>
 
@@ -240,7 +240,7 @@ _Generated securely via digital luxury concierge system_`;
                         value={customerWhatsApp}
                         onChange={(e) => setCustomerWhatsApp(e.target.value)}
                         placeholder="e.g., +61 412 345 678"
-                        className="w-full bg-neutral-900/50 border border-white/5 rounded-lg pl-10 pr-4 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
+                        className="w-full bg-neutral-900/50 border border-white/5 rounded-lg pl-10 pr-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
                       />
                     </div>
                   </div>
@@ -254,14 +254,14 @@ _Generated securely via digital luxury concierge system_`;
                       value={customerEmail}
                       onChange={(e) => setCustomerEmail(e.target.value)}
                       placeholder="e.g., nomad@travels.com"
-                      className="w-full bg-neutral-900/50 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
+                      className="w-full bg-neutral-900/50 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 font-sans"
                     />
                   </div>
                 </div>
 
                 {/* Section 2 */}
                 <div className="pb-3 border-b border-white/[0.03] pt-4">
-                  <span className="font-mono text-[10px] text-amber-500 tracking-widest uppercase">
+                  <span className="font-mono text-[10px] text-gold-500 tracking-widest uppercase">
                     II. DESIGN SCHEMATICS & TARGETS
                   </span>
                 </div>
@@ -281,7 +281,7 @@ _Generated securely via digital luxury concierge system_`;
                       onChange={(e) => setTattooIdea(e.target.value)}
                       placeholder="Describe your design. E.g., 'An intricate sacred geometry mandala pattern wrapping over the front shoulder, blending into single-needle fine lines and custom oceanic dotwork shading...'"
                       rows={4}
-                      className="w-full bg-neutral-900/40 border border-white/5 rounded-lg p-4 text-xs text-white focus:outline-none focus:border-red-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 leading-relaxed font-sans"
+                      className="w-full bg-neutral-900/40 border border-white/5 rounded-lg p-4 text-xs text-white focus:outline-none focus:border-gold-500/50 focus:bg-neutral-900 transition-all placeholder-neutral-600 leading-relaxed font-sans"
                     />
                   </div>
 
@@ -293,7 +293,7 @@ _Generated securely via digital luxury concierge system_`;
                       <select
                         value={placement}
                         onChange={(e) => setPlacement(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 cursor-pointer"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 cursor-pointer"
                       >
                         {PLACEMENTS.map((place) => (
                           <option key={place} value={place}>{place}</option>
@@ -308,7 +308,7 @@ _Generated securely via digital luxury concierge system_`;
                       <select
                         value={budget}
                         onChange={(e) => setBudget(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 cursor-pointer"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 cursor-pointer"
                       >
                         {BUDGETS.map((bd) => (
                           <option key={bd} value={bd}>{bd}</option>
@@ -323,7 +323,7 @@ _Generated securely via digital luxury concierge system_`;
                       <select
                         value={artistId}
                         onChange={(e) => setArtistId(e.target.value)}
-                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 cursor-pointer"
+                        className="w-full bg-neutral-900 border border-white/5 rounded-lg px-3 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 cursor-pointer"
                       >
                         {ARTISTS.map((artist) => (
                           <option key={artist.id} value={artist.id}>
@@ -337,7 +337,7 @@ _Generated securely via digital luxury concierge system_`;
 
                 {/* Section 3: Reference Image Uploader (Fully interactive drag and drop) */}
                 <div className="pb-3 border-b border-white/[0.03] pt-4">
-                  <span className="font-mono text-[10px] text-amber-500 tracking-widest uppercase">
+                  <span className="font-mono text-[10px] text-gold-500 tracking-widest uppercase">
                     III. VISUAL GRAPHICS REFERENCES
                   </span>
                 </div>
@@ -358,8 +358,8 @@ _Generated securely via digital luxury concierge system_`;
                     onClick={triggerFileInput}
                     className={`border border-dashed rounded-xl p-8 text-center cursor-pointer transition-all duration-300 flex flex-col items-center justify-center space-y-3 ${
                       isDragOver
-                        ? "border-red-500 bg-red-500/[0.03]"
-                        : "border-white/10 hover:border-red-500/30 bg-neutral-950/40"
+                        ? "border-gold-500 bg-gold-500/[0.03]"
+                        : "border-white/10 hover:border-gold-500/30 bg-neutral-950/40"
                     }`}
                   >
                     <input
@@ -371,11 +371,11 @@ _Generated securely via digital luxury concierge system_`;
                       className="hidden"
                     />
                     <div className="w-10 h-10 rounded-full bg-neutral-900 border border-white/5 flex items-center justify-center text-neutral-400">
-                      <Upload className="w-5 h-5 group-hover:text-amber-500" />
+                      <Upload className="w-5 h-5 group-hover:text-gold-500" />
                     </div>
                     <div className="space-y-1">
                       <p className="text-xs font-sans font-medium text-white">
-                        Drag and drop your images here, or <span className="text-amber-500 underline">browse computer</span>
+                        Drag and drop your images here, or <span className="text-gold-500 underline">browse computer</span>
                       </p>
                       <p className="text-[10px] font-mono text-neutral-500">
                         Supports JPEG, PNG, or HEIC format files
@@ -410,7 +410,7 @@ _Generated securely via digital luxury concierge system_`;
                               e.stopPropagation();
                               removeFile(fileIdx);
                             }}
-                            className="p-1 px-2 text-neutral-500 hover:text-red-400 rounded-lg hover:bg-neutral-800 transition-colors"
+                            className="p-1 px-2 text-neutral-500 hover:text-gold-400 rounded-lg hover:bg-neutral-800 transition-colors"
                           >
                             <Trash2 className="w-4 h-4" />
                           </button>
@@ -422,7 +422,7 @@ _Generated securely via digital luxury concierge system_`;
 
                 {/* Section 4 */}
                 <div className="pb-3 border-b border-white/[0.03] pt-4">
-                  <span className="font-mono text-[10px] text-amber-500 tracking-widest uppercase">
+                  <span className="font-mono text-[10px] text-gold-500 tracking-widest uppercase">
                     IV. PREFERRED DATE SLOT
                   </span>
                 </div>
@@ -437,7 +437,7 @@ _Generated securely via digital luxury concierge system_`;
                       required
                       value={date}
                       onChange={(e) => setDate(e.target.value)}
-                      className="w-full bg-neutral-900 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 cursor-pointer"
+                      className="w-full bg-neutral-900 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 cursor-pointer"
                     />
                   </div>
 
@@ -448,7 +448,7 @@ _Generated securely via digital luxury concierge system_`;
                     <select
                       value={timeSlot}
                       onChange={(e) => setTimeSlot(e.target.value)}
-                      className="w-full bg-neutral-900 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-red-500/50 cursor-pointer"
+                      className="w-full bg-neutral-900 border border-white/5 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-gold-500/50 cursor-pointer"
                     >
                       <option value="09:00 AM - 11:30 AM">09:00 AM - 11:30 AM</option>
                       <option value="12:00 PM - 02:30 PM">12:00 PM - 02:30 PM</option>
@@ -471,7 +471,7 @@ _Generated securely via digital luxury concierge system_`;
 
                   <button
                     type="submit"
-                    className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-red-600 hover:from-red-700 to-amber-600 hover:to-amber-700 text-white font-mono font-bold text-xs tracking-[0.15em] rounded-xl shadow-lg hover:shadow-red-950/20 active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2.5 uppercase"
+                    className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-gold-600 hover:from-gold-700 to-gold-500 hover:to-gold-600 text-white font-mono font-bold text-xs tracking-[0.15em] rounded-xl shadow-lg hover:shadow-gold-950/20 active:scale-[0.98] transition-all cursor-pointer flex items-center justify-center gap-2.5 uppercase"
                   >
                     <Send className="w-4 h-4 text-white" />
                     SUBMIT INK PROPOSAL
@@ -485,12 +485,12 @@ _Generated securely via digital luxury concierge system_`;
                 animate={{ opacity: 1, scale: 1 }}
                 className="text-center py-12 md:py-16 space-y-8"
               >
-                <div className="w-16 h-16 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center mx-auto text-amber-400">
+                <div className="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mx-auto text-gold-400">
                   <Check className="w-8 h-8 stroke-[2.5]" />
                 </div>
 
                 <div className="space-y-3 max-w-md mx-auto">
-                  <span className="font-mono text-[9px] tracking-widest text-amber-500 uppercase">
+                  <span className="font-mono text-[9px] tracking-widest text-gold-500 uppercase">
                     PROPOSAL DISPATCHED SUCCESSFULLY
                   </span>
                   <h3 className="text-2xl md:text-3xl font-serif font-light text-white uppercase tracking-tight">
@@ -499,7 +499,7 @@ _Generated securely via digital luxury concierge system_`;
                   <p className="text-xs text-neutral-400 leading-relaxed font-sans font-light">
                     Your appointment ticket <strong className="text-white font-mono">{lastBookingId}</strong> has been logged to your private client board and formatted for secure dispatch.
                   </p>
-                  <p className="text-xs text-amber-500 font-mono">
+                  <p className="text-xs text-gold-500 font-mono">
                     Transferring you to WhatsApp with our coordinator...
                   </p>
                 </div>

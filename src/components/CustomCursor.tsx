@@ -58,23 +58,23 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Inner Red Core dot */}
+      {/* Inner Gold Core dot */}
       <div
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-red-500 rounded-full pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 mix-blend-difference"
+        className="fixed top-0 left-0 w-1.5 h-1.5 bg-gold-500 rounded-full pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 mix-blend-difference"
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`
         }}
       />
       
-      {/* Outer Golden/Red ambient tracking ring */}
+      {/* Outer Golden ambient tracking ring */}
       <div
         className={`fixed top-0 left-0 rounded-full pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out ${
           clicked
-            ? "w-6 h-6 bg-red-500/10 border border-red-500 scale-90"
+            ? "w-6 h-6 bg-gold-500/10 border border-gold-500 scale-90"
             : isHoveringLink
-            ? "w-9 h-9 bg-amber-500/5 border border-amber-400 scale-110"
-            : "w-7 h-7 border border-amber-500/60"
+            ? "w-9 h-9 bg-gold-500/5 border border-gold-400 scale-110"
+            : "w-7 h-7 border border-gold-500/60"
         }`}
         style={{
           left: `${position.x}px`,
