@@ -127,7 +127,7 @@ export default function App() {
         }`}
       >
      <a href="#hero-section" className="flex items-center">
-  <img src="./src/assets/images/logo_baru.png" alt="Devarda Ink Logo" className="h-8 w-auto object-contain" />
+  <img src="./logo_baru.png" alt="Devarda Ink Logo" className="h-8 w-auto object-contain" />
 </a>
 
         {/* Desktop Anchor links */}
