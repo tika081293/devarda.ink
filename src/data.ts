@@ -2,13 +2,13 @@ import { TattooStyle, Artist, PortfolioItem, FAQ } from "./types";
 
 // Visual references from generated images
 export const IMAGES = {
-  studioInterior: "/src/assets/images/IMG_4201.PNG",
-  tattooProcess: "/src/assets/images/studio_baru.jpg",
-  tattooArtwork: "/src/assets/images/armband_black_bg_1779417848244.png",
-  blackworkSleeve: "/src/assets/images/sleeve_black_bg_1779418027639.png",
-  realismStatue: "/src/assets/images/statue_black_bg_1779418050290.png",
-  fineLineVine: "/src/assets/images/fine_line_vine_1779418228776.png",
-  frangipaniTattoo: "/src/assets/images/frangipani_black_bg_1779421686740.png",
+  studioInterior: "./IMG_4201.PNG",
+  tattooProcess: "./studio_baru.jpg",
+  tattooArtwork: "./armband_black_bg_1779417848244.png",
+  blackworkSleeve: "./sleeve_black_bg_1779418027639.png",
+  realismStatue: "./statue_black_bg_1779418050290.png",
+  fineLineVine: "./fine_line_vine_1779418228776.png",
+  frangipaniTattoo: "./frangipani_black_bg_1779421686740.png",
 };
 
 export interface Testimonial {
