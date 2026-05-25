@@ -6,7 +6,7 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     // 🌟 This maps asset requests to your exact repository layout
-    base: '/devarda.ink/', 
+    base: '/', 
     
     plugins: [react(), tailwindcss()],
     resolve: {
